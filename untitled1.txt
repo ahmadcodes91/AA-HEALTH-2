@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>A. A CLINIC FOR HEALTH</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f5f9ff;
+color:#333;
+}
+
+/* NAVBAR */
+
+header{
+position:sticky;
+top:0;
+background:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 30px;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+z-index:100;
+}
+
+.logo{
+font-weight:700;
+font-size:20px;
+color:#1e88e5;
+}
+
+nav a{
+margin:0 12px;
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+/* HERO */
+
+.hero{
+height:85vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url("photo3.jpg"); /* PHOTO 3 background */
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:20px;
+}
+
+.btn{
+background:#1e88e5;
+padding:12px 25px;
+color:white;
+border:none;
+border-radius:30px;
+cursor:pointer;
+text-decoration:none;
+}
+
+/* SERVICES */
+
+.section{
+padding:70px 20px;
+text-align:center;
+}
+
+.section h2{
+font-size:30px;
+margin-bottom:30px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+max-width:1000px;
+margin:auto;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 10px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+/* ABOUT */
+
+.about{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+max-width:1000px;
+margin:auto;
+gap:30px;
+}
+
+.about img{
+width:100%;
+max-width:450px;
+border-radius:10px;
+}
+
+/* REVIEWS */
+
+.review-box{
+max-width:600px;
+margin:20px auto;
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 10px 20px rgba(0,0,0,0.08);
+}
+
+/* APPOINTMENT */
+
+.form-box{
+max-width:500px;
+margin:auto;
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 10px 20px rgba(0,0,0,0.08);
+}
+
+input,select{
+width:100%;
+padding:10px;
+margin:8px 0;
+border-radius:6px;
+border:1px solid #ddd;
+}
+
+/* RECEIPT */
+
+.receipt{
+display:none;
+background:white;
+padding:20px;
+margin-top:20px;
+border-radius:10px;
+box-shadow:0 10px 20px rgba(0,0,0,0.08);
+}
+
+/* CONTACT */
+
+.contact{
+max-width:600px;
+margin:auto;
+}
+
+/* FOOTER */
+
+footer{
+background:#0d47a1;
+color:white;
+padding:30px;
+text-align:center;
+margin-top:50px;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25d366;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:20px;
+text-decoration:none;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:28px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">A. A CLINIC FOR HEALTH</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#appointment">Appointment</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div>
+
+<h1>Professional Dental Care</h1>
+
+<p>Modern Technology & Trusted Doctors</p>
+
+<a href="#appointment" class="btn">Book Appointment</a>
+
+</div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section class="section" id="services">
+
+<h2>Our Services</h2>
+
+<div class="services">
+
+<div class="card">Dental Checkup</div>
+<div class="card">Teeth Cleaning</div>
+<div class="card">Child Dental Care</div>
+<div class="card">Root Canal Treatment</div>
+<div class="card">Teeth Whitening</div>
+<div class="card">Emergency Dental Care</div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="section">
+
+<h2>About Our Clinic</h2>
+
+<div class="about">
+
+<img src="photo6.jpg"> <!-- PHOTO 6 clinic interior -->
+
+<p>
+
+A. A CLINIC FOR HEALTH provides modern dental care with advanced technology and experienced doctors.  
+We focus on patient comfort, hygiene and high quality treatment.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- APPOINTMENT -->
+
+<section class="section" id="appointment">
+
+<h2>Book Appointment</h2>
+
+<div class="form-box">
+
+<input type="text" id="name" placeholder="Your Name">
+
+<input type="email" id="email" placeholder="Email">
+
+<input type="tel" id="phone" placeholder="Phone">
+
+<input type="date" id="date">
+
+<input type="time" id="time">
+
+<button class="btn" onclick="book()">Book Appointment</button>
+
+<div class="receipt" id="receipt"></div>
+
+</div>
+
+</section>
+
+
+<!-- REVIEWS -->
+
+<section class="section">
+
+<h2>Patient Reviews</h2>
+
+<div class="review-box">
+
+⭐⭐⭐⭐⭐  
+<br><br>
+
+Excellent dental care and very professional staff. Highly recommended clinic.
+
+<br><br>
+
+<b>Afsar Imam</b>
+
+</div>
+
+
+<div class="review-box">
+
+⭐⭐⭐⭐⭐  
+<br><br>
+
+Very clean clinic and doctor explained everything clearly. Great experience.
+
+<br><br>
+
+<b>Faizan Ahmad</b>
+
+</div>
+
+
+<div class="review-box">
+
+⭐⭐⭐⭐⭐  
+<br><br>
+
+My child felt very comfortable during treatment. Best dental clinic for kids.
+
+<br><br>
+
+<b>Kasih Miraimae</b>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="section" id="contact">
+
+<h2>Contact Us</h2>
+
+<div class="contact">
+
+<p><b>Address:</b> Bareilly, Uttar Pradesh</p>
+
+<p><b>Email:</b> a20789191@gmail.com</p>
+
+<p><b>Phone:</b> 7906588922</p>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 A. A CLINIC FOR HEALTH</p>
+
+</footer>
+
+
+<!-- WHATSAPP BUTTON -->
+
+<a class="whatsapp"
+href="https://wa.me/917906588922"
+target="_blank">💬</a>
+
+
+<script>
+
+/* TOKEN SYSTEM */
+
+let token = 1;
+
+function book(){
+
+let name=document.getElementById("name").value;
+let email=document.getElementById("email").value;
+let phone=document.getElementById("phone").value;
+let date=document.getElementById("date").value;
+let time=document.getElementById("time").value;
+
+if(name==""||email==""||phone==""){
+alert("Please fill all fields");
+return;
+}
+
+let receipt = document.getElementById("receipt");
+
+receipt.style.display="block";
+
+receipt.innerHTML =
+
+"<h3>Appointment Receipt</h3>" +
+
+"<p><b>Name:</b> "+name+"</p>" +
+
+"<p><b>Date:</b> "+date+"</p>" +
+
+"<p><b>Time:</b> "+time+"</p>" +
+
+"<p><b>Your Token Number:</b> "+token+"</p>" +
+
+"<p>Please arrive before your appointment time.</p>";
+
+token++;
+
+}
+
+</script>
+
+
+</body>
+</html>
